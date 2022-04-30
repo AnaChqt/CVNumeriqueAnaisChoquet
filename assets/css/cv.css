@@ -1,0 +1,592 @@
+/*===================================== CSS ===========================================*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+*{
+    outline: 0;
+}
+
+html, body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    scroll-behavior: smooth;
+    background-color: #161925;
+}
+
+/* SCROLLBAR */
+    *::-webkit-scrollbar {
+        width: 0.5rem;
+    }
+
+    *::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    *::-webkit-scrollbar-thumb {
+        background-color: #BE6E46;
+        border-radius: 0.625rem;
+    }
+
+/* SECTION TITLES */
+    .section_title {
+        font-size: 3rem;
+        text-align: center;
+        position: relative;
+        font-weight: 300;
+        color: #5b5963;
+    }
+
+    .section_title2{
+        font-size: 6.25rem;
+        position: absolute;
+        left: 0;
+        right: 0;
+        text-align: center;
+        top: -35px;
+        z-index: 0;
+        opacity: 0.05;
+        font-weight: 700;
+    }
+
+    p{
+        font-size: 1.1rem;
+    }
+
+/*===============================================================================================*/
+/*============================= CSS HOME PAGE ===================================================*/
+
+/* NAVBAR */
+    header{
+        position: absolute;
+        height: 10vh;
+        top: 0;
+        left: 0;
+        padding: 0 1rem;
+    }
+
+    .navbar{
+        font-size: 1.2rem;
+        padding: 2rem 2rem;
+        height: 6rem;
+        position: fixed;
+        background: rgba(136, 142, 151, 0.6);
+        box-shadow: 0 0.5rem 2rem 0 rgba(54, 56, 82, 0.369);
+        backdrop-filter: blur(5px);
+        border: transparent;
+        transition: all 0.7s ease-out;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
+    .nav-item{
+        padding: 0em 1em;
+        align-items: center;
+    }
+
+    .nav-item a {
+        text-decoration: none;
+        font: 1.25rem;
+        padding: 0.313rem 0.625rem;
+        position: relative;
+        z-index: 0;
+        text-align: center;
+    }
+
+    .icon{
+        cursor: pointer;
+    }
+
+    /* .logo{
+        height: 6.25rem;
+        width: 9.375rem;
+    } */
+
+/* DESIGN ANIM LINKS */
+    .navbar-light .navbar-nav .nav-link{
+        color: #F5F3F2;
+    }
+
+    a:before, a:after {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 0.125rem;
+        background: #BE6E46;
+        content:"";
+        opacity: 0;
+        -webkit-transition: all 0.7s;
+        transition: all 0.7s;
+    }
+
+    .nav-link:before {
+        top: 0;
+        transform: translateY(10px);
+    }
+
+    .nav-link:after {
+        bottom: 0;
+        transform: translateY(-10px);
+    }
+
+    .nav-link:hover:before, .nav-link:hover:after {
+        opacity: 1;
+        transform: translateY(0px);
+        background: #BE6E46;
+    }
+
+    .nav-link:hover{
+        color: #BE6E46 !important;
+        font-weight: bold !important;
+    }
+
+    .active{
+        color: #BE6E46 !important;
+        font-weight: bold !important;
+    }
+
+/* COVER*/
+    .cover{
+        padding-top: 20rem ;
+
+    }
+    .title{
+        color: #BE6E46;
+        font-size: 4.2rem; 
+    }
+    
+    .title2{
+        font-size: 1.5rem;
+    }
+    
+    .module-line {
+        background: #BE6E46;
+        width: 250px;
+        height: 1px;
+        margin: 30px auto;
+    }
+
+    .btnWorks{
+        /* margin-top: 1rem; */
+        font-size: large;
+    }
+
+/*===================================================================================================*/
+/*============================= CSS ABOUT ME PAGE ===================================================*/
+
+/* BLOCK IMAGE */
+    .profil{
+        display: block;
+        height: 70%;
+    }
+
+    .borderColor{
+        border-color: #BE6E46 !important;
+    }
+
+/* BLOCK BIO */
+    b{
+        color: #BE6E46;
+    }
+
+    .biographie{
+        font-size: 1.1rem;
+        text-align: center;
+        color: #F5F3F2;
+    }
+
+/* ENGLISH VERSION LINK */
+    a{
+        color: #BE6E46;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    a:hover{
+        color: #F5F3F2;
+    }
+
+/* SOCIAL LINKS */
+    .social{
+        padding: 0.5rem;
+    }
+
+/* CV BUTTON */
+    .btn{
+        color: #BE6E46;
+        border-radius: 30px;
+        border-color: #BE6E46;
+    }
+    button:focus {
+        box-shadow: none !important;
+    }
+
+    .btn:hover {
+        background: #BE6E46;
+        color: white;
+    }
+
+/*===================================================================================================*/
+/*============================= CSS SKILLS PAGE ===================================================*/
+
+    .card{
+        width: auto;
+        height: auto;
+        background: rgb(136, 142, 151, 0.6);
+        box-shadow: 0 8px 32px 0 rgba(90, 94, 100, 0.37); 
+        backdrop-filter: blur(5px);
+        border: transparent;
+    } 
+
+    .skills_left, .skills_right{
+        cursor: pointer;
+        transition: transform 0.25s ease-in-out;
+    }
+
+    .skills_left:hover{
+        transform: translate(-20px, -20px);
+    }
+
+    .skills_right:hover{
+        transform: translate(20px, -20px);
+    }
+
+    h2{
+        color: #BE6E46;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    .text{
+        color: #F5F3F2;
+    }
+
+    .skills{ 
+        color: #BE6E46 ;
+        font-weight: bold;
+        font-size: 2rem !important;
+    }
+
+/*===================================================================================================*/
+/*============================= CSS EXPERIENCES PAGE ===================================================*/
+
+/* TTIMELINE VERTICAL */
+    .timeline {
+        position: relative;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .timeline::after {
+        content: '';
+        position: absolute;
+        width: 2px;
+        background-color: #F5F3F2;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        margin-left: -3px;
+    }
+
+/* Container around content */
+    .container {
+        padding: 10px 40px;
+        position: relative;
+        background-color: inherit;
+        width: 50%;
+        z-index: 2;
+    }
+
+/* THE CIRCLES ON THE TIMELINE */
+    .container::after {
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        right: -11px;
+        border: solid;
+        border-color: #BE6E46;
+        background-color: #161925;
+        top: 15px;
+        border-radius: 50%;
+        z-index: 1;
+    }
+
+/* CONTAINER TO THE LEFT */
+    .left {
+        left: -25%;
+    }
+
+/* CONTAINER TO THE RIGHT */
+    .right {
+        left: 25%;
+    }
+
+/* ARROW TO THE LEFT CONTAINER (POINTING RIGHT) */
+    .left::before {
+        content: '';
+        height: 0;
+        position: absolute;
+        top: 22px;
+        width: 0;
+        z-index: 1;
+        right: 30px;
+        border: medium solid rgb(136, 142, 151, 0.6);
+        border-width: 10px 0 10px 10px;
+        border-color: transparent transparent transparent rgb(136, 142, 151, 0.6);
+    }
+
+/* ARROW TO THE RIGHT CONTAINER (POINTING LEFT) */
+    .right::before {
+        content: '';
+        height: 0;
+        position: absolute;
+        top: 22px;
+        width: 0;
+        z-index: 1;
+        left: 30px;
+        border: medium solid rgb(136, 142, 151, 0.6);
+        border-width: 10px 10px 10px 0;
+        border-color: transparent rgb(136, 142, 151, 0.6) transparent transparent;
+    }
+
+/* CIRCLES FOR CONTAINERS ON THE RIGHT SIDE */
+    .right::after {
+        left: -14px;
+    }
+
+/* CARDS */
+    .content {
+        padding: 20px 30px;
+        background: rgb(136, 142, 151, 0.6);
+        position: relative;
+        border: transparent;
+        border-radius: 0.25rem;
+    }
+
+    .study{
+        font-size: 0.9rem;
+    }
+
+/*===================================================================================================*/
+/*============================= CSS PORTFOLIO PAGE ===================================================*/
+
+/* CARDS PRESENTATION */
+    .card_works{
+        width: auto;
+        height: auto;
+        background: rgb(136, 142, 151, 0.6);
+        border-radius: 0.5rem;
+        overflow: hidden;
+        box-shadow: 5px 5px 12px #0d0f17, -5px -5px 12px #1f2333 ;
+    }
+
+    .card_works::after{
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 0.5rem;
+        box-shadow: 5px 5px 12px #0d0f17, -5px -5px 12px #1f2333 ;
+        opacity: 0;
+        transition: transform width 0.7s ease-in-out, box-shadow 0.5s;
+    }
+
+    .card_works:hover{
+        transform: scale(1.02);
+        box-shadow: 13px 13px 17px #0d0f17, -13px -13px 17px #1f2333;
+    }
+
+/* IMG PRESENTATION */
+    .card_works, .portfolio{
+        width: 100%;
+        height: 100%;
+    }
+
+    .portfolio{
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        -webkit-transition: .2s ease-in-out;
+        transition: .2s ease-in-out;
+    }
+
+    .portfolio:hover{
+        -webkit-filter: grayscale(0);
+        filter: grayscale(0);
+    }
+
+/* MODALS */
+    .modal-content{
+        background: #5B5F6A;
+    }
+
+    .title_project, .languages{
+        color: #BE6E46;
+        font-weight: bold;
+    }
+
+/*===================================================================================================*/
+/*============================= CSS CONTACT PAGE ===================================================*/
+
+ /* Card form design */
+    .card_contact {
+        padding: 3rem;
+        background-color: #161925;
+        border-style: double;
+        border-color: #BE6E46;
+        width:600px;
+        height: auto;
+    }
+
+    .floatingName, h3{
+        color: #F5F3F2;
+    }
+
+/* textarea height */
+    #message{
+        height: 8rem;
+    }
+
+/* Required */
+    .infos{
+        color: #F5F3F2;
+        font-size : 0.8125rem;
+    }
+
+/*===================================================================================================*/
+/*============================= CSS FOOTER ===================================================*/
+
+footer{
+    height: auto;
+    background: rgba(91, 95, 106, 0.6);
+}
+
+.social1{
+    padding-right: 0.5rem;
+    padding-bottom: 0.4rem;
+}
+
+.social2{
+    padding-left: 0.5rem;
+    padding-bottom: 0.4rem;
+}
+
+
+
+
+
+/*===================================================================================================*/
+/*============================= MEDIA QUERIES ===================================================*/
+
+
+
+
+    @media screen and (max-width: 991px) {
+        .nav-link:hover:before, .nav-link:hover:after{
+            display: none;
+        }
+    
+        button, .navbar-toggler{
+            font-size: 0.8rem;
+        }
+    
+        .navbar-nav{
+            height: 100%;
+        }
+    
+        .navbar-toggler{
+            border: solid;
+            border-color: #BE6E46 !important;
+            color: #BE6E46 !important;
+        }
+    
+        .navbar-light .navbar-toggler-icon{
+            background-image: url("/assets/img/menu_Toggler.png");
+        }
+    
+        .navbarName{
+            font-weight: bold;
+            color: #BE6E46 ;
+        }
+    
+        .navbar{
+            height: 17vh;
+        }
+    
+        .logo{
+            display: none;
+        }
+    
+        .navVersion{
+        background: #5B5F6A;
+        }
+    
+        .navbarMobile2{
+            width: 180px; 
+        } 
+    
+        .navbarMobile .navbarMobile2{
+            display: flex;
+            flex-direction: row;
+        }
+    
+        body{
+            background-image: none;
+        }
+
+        .section_title2{
+            font-size: 2.9rem;
+            top: -16px;
+        }
+    
+        .section_title{
+            font-size: 1.2rem;
+        }
+
+        .skills{
+            flex-direction: column;
+        }
+    }
+
+/* Media queries - Responsive timeline */
+@media screen and (max-width: 600px) {
+/* Place the timelime to the left */
+    .timeline::after {
+        left: 31px;
+    }
+
+/* Full-width containers */
+    .container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+/* Make sure that all arrows are pointing leftwards */
+    .container::before {
+        left: 60px;
+        border: medium solid rgb(136, 142, 151, 0.6);
+        border-width: 10px 10px 10px 0;
+        border-color: transparent rgb(136, 142, 151, 0.6) transparent transparent;
+    }
+
+/* Make sure all circles are at the same spot */
+    .right::after {
+        left: 16px;
+    }
+
+    .left::after{
+        left: 16px;
+    }
+
+/* Make all right containers behave like the left ones */
+    .right {
+        left: 0%;
+    }
+    .left {
+        left: 0%;
+    }
+}

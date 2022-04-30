@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<!-- CSS -->
+    <link rel="stylesheet" href="assets/css/cv.css">
+<!-- CSS AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+
+    <title>Anaïs Choquet - CV Numérique</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light justify-content-center fixed-top">
+            <div class="container-fluid navbarMobile">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <div class="navbarName">Menu</div>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between navVersion" id="navbarNav">
+                    <div class="logo">
+                        <a href="#homePage" class="link logo"><img src="assets/img/logo.png" alt=""></a>
+                    </div>
+                    <ul class="navbar-nav text-center fw-bold">
+                        <li class="nav-item">
+                            <a class="nav-link link" href="#aboutMe">A Propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link" href="#skills">Compétences</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link" href="#experiences">Formations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="homePage" class="min-vh-100"> 
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 text-center cover">
+                    <p class="title">ANAÏS CHOQUET</p>
+                    <div class="module-line"></div>
+                    <p class="title title2 mt-5 mb-5 pb-5" id="job"></p>
+                </div>
+                <div class="text-center mt-3 pt-2">
+                    <a href="#aboutMe"><button class="btn top p-2" type="submit">Découvrez mon travail</button></a>                
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="aboutMe" class="min-vh-100 pt-5">
+        <div class="container-fluid pt-5">
+            <div class="row py-5"> 
+                <h1 class="text-center text-light section_title" >
+                    QUI SUIS-JE
+                    <span class="section_title2 px-5">A PROPOS</span>
+                </h1>
+                <div class="module-line"></div>
+            </div>
+
+            <div class="row d-flex pt-5 pb-5">
+<!-- PICTURE -->
+                <div class="col-12 col-lg-6 px-3 d-flex justify-content-center">
+                    <img src="assets/img/myPicture.png" alt="me in front of New York Skyline" class="border-2 border rounded-circle p-2 borderColor profil ">
+                </div>
+<!-- BIO -->
+                <div class="col-12 col-lg-6 px-4">
+                    <p class="biographie">Je suis Anaïs, <b>développeuse web junior</b> et actuellement en formation à La Manu, Amiens.                       
+                    <p class="biographie">Titulaire d'une maitrise en archéologie, j'ai décidé après plusieurs années d'entamer une reconversion
+                        dans le domaine du numérique et dans la <b>création de sites internet</b>.</p>
+                    <p class="biographie">J'ai profité du premier confinement pour commencer mon apprentissage en <b>autodidacte</b> avant d'intégrer
+                        la formation "<b>Développement web et web mobile</b>" à La Manu.</p> 
+                    <div class="d-flex justify-content-center pt-4">
+                        <a href="https://www.linkedin.com/in/ana%C3%AFs-choquet-00926a158/" target="_blank"><img src="assets/img/linkedin.png" class="social" alt="logo Linkedin"></a>
+                        <a href="https://github.com/AnaChqt" target="_blank"><img src="assets/img/github.png" class="social" alt="Logo GitHub"></a>
+                    </div>
+                    <div class="text-center py-4">
+                        <a href="assets/pdf/cv.pdf" download><button class="btn" type="submit">Telecharger mon CV</button></a>                
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="min-vh-100 p-5">
+        <div class="container-fluid pt-5">
+            <div class="row py-5"> 
+                <h1 class="text-center text-light section_title" >
+                    MES APTITUDES
+                    <span class="section_title2 d-flex justify-content-center">COMPÉTENCES</span>
+                </h1>
+                <div class="module-line"></div>
+            </div>
+<!-- Card front-end -->
+            <div class="row pt-5">
+                <div class="col-12 col-lg-6">
+                    <div class="card skills_left">
+                        <h2 class="pt-3 text-center">FRONT-END</h2>
+                        <p class="p-2 pt-2 pb-3 text text-center">Création et intégration de sites web et applications mobiles responsive, 
+                                        accessibles et répondant aux normes W3C.</p>
+                        <div class="skills d-inline-flex d-flex justify-content-around px-4 pb-2 text-center">
+                            <p> HTML5 </p>
+                            <p> CSS3 </p>
+                            <p> JavaScript </p>
+                            <p> Json </p>
+                            <p> Bootstrap </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!-- Card back-end -->
+            <div class="row justify-content-end pt-4">
+                <div class="col-12 col-lg-6">
+                    <div class="card skills_right">
+                        <h2 class="pt-3 text-center">BACK-END</h2>
+                        <p class="p-2 pt-2 pb-3 text text-center">Développement de sites web et applications, création et gestion de bases de données, 
+                                                programmation orientée objet.</p>
+                        <div class="skills d-inline-flex d-flex justify-content-around px-4 pb-2 text-center">
+                            <p> PHP8 </p>
+                            <p> SQL </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!-- Card CMS et Web design -->
+            <div class="row pt-4">
+                <div class="col-12 col-lg-6">
+                    <div class="card skills_left">
+                        <h2 class="pt-3 text-center">CMS - WEB DESIGN</h2>
+                        <p class="p-2 pt-2 pb-3 text text-center"> Création et édition de thème Wordpress. Création de maquettes et conception centrée UX.</p>
+                        <div class="skills d-inline-flex d-flex justify-content-around px-4 pb-2 text-center">
+                            <p> Wordpress </p>
+                            <p> Adobe XD </p>
+                            <p> Canva </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!-- Card environnement de travail -->
+            <div class="row justify-content-end pt-4">
+                <div class="col-12 col-lg-6">
+                    <div class="card skills_right">
+                        <h2 class="pt-3 text-center px-2">ENVIRONNEMENT DE TRAVAIL</h2>
+                        <p class="p-2 pt-2 pb-3 text lh-lg text-center">
+                            <b>Systèmes d'exploitation :</b> Windows 10, Windows 11 <br>
+                            <b>Workflow :</b> Git, Laragon, Chrome, FileZilla <br>
+                            <b>IDE :</b> Visual Studio Code <br>
+                            <b>Autres compétences :</b> Maîtrise de l'anglais (TOEIC 2018 : 945/990), traduction anglais/français <br>
+                            <b>Savoir-être :</b> Créativité, Réactivité, Autonomie, Polyvalence, Curiosité et Travail en équipe
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experiences" class="min-vh-100 pt-5">
+        <div class="container-fluid pt-5">
+            <div class="row py-5">
+                <h1 class="text-center text-light section_title" >
+                    MES EXPERIENCES
+                    <span class="section_title2">FORMATIONS</span>
+                </h1>
+                <div class="module-line"></div>
+            </div>
+<!-- Formation Dev LA MANU AMIENS -->
+            <div class="pt-5">
+                <div class="timeline pt-5">
+                    <div class="container left" data-aos="slide-up" data-aos-once="true" data-aos-duration = "1000">
+                        <div class="content">
+                            <h2>Décembre 2021 - Aujourd'hui</h2>
+                            <h5 class="text-center fw-bold">LA MANU AMIENS</h5>
+                            <p class="text fst-italic">Formation développement web et web mobile (<span class="study">RNCP Niveau 5</span>)</p>
+                        </div>
+                    </div>
+<!-- CDD Auchan -->
+                    <div class="container right" data-aos="slide-up" data-aos-once="true" data-aos-duration = "1000">
+                        <div class="content">
+                            <h2>Avril 2016 - Décembre 2019</h2>
+                            <h5 class="text-center fw-bold">HYPERMARCHÉ AUCHAN DURY</h5>
+                            <p class="text fst-italic">Employée de rayon libre-service (<span class="study">Boucherie</span>)</p>
+                        </div>
+                    </div>
+<!-- Maitrise Archéo LILLE -->
+                    <div class="container left" data-aos="slide-up" data-aos-once="true" data-aos-duration = "1000">
+                        <div class="content">
+                            <h2>2013 - 2014</h2>
+                            <h5 class="text-center fw-bold">UNIVERSITÉ LILLE 3</h5>
+                            <p class="text fst-italic">Maîtrise Sciences Humaines et Sociales, mention Sciences de l'Antiquité (<span class="study">Spécialité Histoire et Archéologie des mondes classiques</span>)</p>
+                        </div>
+                    </div>
+<!-- Licence Histoire de l'art AMIENS -->
+                    <div class="container right" data-aos="slide-up" data-aos-once="true" data-aos-duration = "1000">
+                        <div class="content">
+                            <h2>2010 - 2013</h2>
+                            <h5 class="text-center fw-bold">UNIVERSITÉ AMIENS PICARDIE JULES VERNE</h5>
+                            <p class="text fst-italic">Licence Arts parcours Histoire de l'Art et Archéologie</p>                         
+                        </div>
+                    </div>
+<!-- Bac ES AMIENS -->
+                    <div class="container left" data-aos="slide-up" data-aos-once="true" data-aos-duration = "1000">
+                        <div class="content">
+                            <h2>2010</h2>
+                            <h5 class="text-center fw-bold">LYCÉE MADELEINE MICHELIS</h5>
+                            <p class="text fst-italic">Baccalauréat Général série Economique et Sociale</p>                        
+                        </div>
+                    </div>
+<!-- Stages Archéo -->
+                    <div class="container right" data-aos="slide-up" data-aos-once="true" data-aos-duration = "1000">
+                        <div class="content">
+                            <h2>Étés 2010 / 2011 / 2012 / 2013 / 2015</h2>
+                            <p class="text fst-italic">Chantiers de fouilles bénévoles (<span class="study">Saleux, Vendeuil-Caply, Chassenon et Eaucourt-sur-Somme</span>)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="min-vh-100 p-5">
+        <div class="container-fluid pt-5">
+            <div class="row py-5">
+                <h1 class="text-center text-light section_title" >
+                    MES REALISATIONS
+                    <span class="section_title2">PORTFOLIO</span>
+                </h1>
+                <div class="module-line"></div>
+            </div>
+
+            <div class="row d-flex pt-5">
+<!-- Cards Movies -->
+                <div class="col-12 col-lg-4 p-3">
+                    <div class="card_works">
+                        <a class="icon" data-bs-toggle="modal" data-bs-target="#openModal1"><img src="assets/img/Hoppy_Beaver.jpg" class="portfolio" alt=""></a>
+                    </div>
+                </div>
+<!-- Shifumi -->
+                <div class="col-12 col-lg-4 p-3">
+                    <div class="card_works">
+                        <a class="icon" data-bs-toggle="modal" data-bs-target="#openModal2"><img src="assets/img/moviesJSON.jpg" class="portfolio" alt=""></a>
+                    </div>
+                </div>
+<!-- Wordpress couture -->
+                <div class="col-12 col-lg-4 p-3">
+                    <div class="card_works">
+                        <a class="icon" data-bs-toggle="modal" data-bs-target="#openModal3"><img src="assets/img/shifumiJS.jpg" class="portfolio" alt=""></a>
+                    </div>
+                </div>
+<!-- Calendrier -->
+                <div class="col-12 col-lg-4 p-3">
+                    <div class="card_works">
+                        <a class="icon" data-bs-toggle="modal" data-bs-target="#openModal4"><img src="assets/img/Calendar.jpg" class="portfolio" alt=""></a>
+                    </div>
+                </div>
+<!-- Formulaire -->
+                <div class="col-12 col-lg-4 p-3">
+                    <div class="card_works">
+                        <a class="icon" data-bs-toggle="modal" data-bs-target="#openModal5"><img src="assets/img/Form.jpg" class="portfolio" alt=""></a>
+                    </div>
+                </div>
+<!-- Projet Hôpital -->
+                <div class="col-12 col-lg-4 p-3">
+                    <div class="card_works">
+                        <a class="icon" data-bs-toggle="modal" data-bs-target="#openModal6"><img src="assets/img/ManuMedic.jpg" class="portfolio" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="min-vh-100 pb-5 px-2">
+        <div class="container-fluid pt-5">
+            <div class="row py-5">
+                <h1 class="text-center text-light section_title" >
+                    UNE QUESTION ?
+                    <span class="section_title2">CONTACT</span>
+                </h1>
+                <div class="module-line"></div>
+            </div>
+            <div class="row pt-4">
+                <div class="col-12 d-flex justify-content-center">
+                    <div class="card_contact">
+                        <form action="#" method="POST">
+                            <div class="mb-3">
+                                <h3 class="text-center pb-2">Contact **</h3>
+                                <label class="floatingName" for="floatingInput">Prénom*</label>
+                                <input type="text" required class="form-control" id="floatingInput" placeholder="Prénom">
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="floatingName" for="floatingInput">Email*</label>
+                                <input type="email" required class="form-control" id="floatingInput" placeholder="name@example.com">
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="floatingName" for="floatingInput">Sujet</label>
+                                <input type="text" class="form-control" id="floatingInput" placeholder="Sujet">
+                            </div>
+
+                            <div class="mb-5">
+                                <label class="floatingName" for="message" class="form-label">Votre message*</label>
+                                <textarea class="form-control" required id="message" rows="3"></textarea>
+                            </div>
+
+                            <div class="text-center">
+                                <button type="button" class="btn ">Envoyer</button>
+                            </div>
+
+                            <div class="infos pt-3">
+                                * Informations obligatoires
+                            </div>
+                            <div class="infos pt-3">
+                                ** Ce formulaire est actuellement en maintenance. <br>Si vous souhaitez me contacter, laissez moi un message sur Linkedin.
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Portfolio Modals -->
+<!-- Hoppy Beaver -->
+<div class="modal fade" id="openModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+            <button type="button" class="btn-close p-3" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="description px-5">
+                <h3 class="title-projet p-3 text-center title_project">Hoppy Beaver Extreme GAME</h3>
+                <p class="text text-center">Création d'un mini jeu sur le site Khan Academy.</p>
+                    <p class="text-center languages py-3">HTML - CSS - JavaScript</p>
+                <form action="https://fr.khanacademy.org/computer-programming/new-program/6390189312917504" target="_blank">
+                    <div class="text-center pt-3 pb-5">
+                        <button class="btn" type="submit">Voir le projet</button>                
+                    </div>                          
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Movies -->
+    <div class="modal fade" id="openModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <button type="button" class="btn-close p-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="description px-5">
+                    <h3 class="title-projet p-3 text-center title_project">My Favorite Movies</h3>
+                    <p class="text text-center">Création d'une page présentant une partie de mes films préférés. 
+                        Manipulation des données à l'aide d'un fichier JSON.</p>
+                        <p class="text-center languages py-3">HTML - CSS - JavaScript - Json</p>
+                    <form action="https://anachqt.github.io/MyFavMovies/" target="_blank">
+                        <div class="text-center pt-3 pb-5">
+                            <button class="btn" type="submit">Voir le projet</button>                
+                        </div>                          
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Modal Shifumi -->
+    <div class="modal fade" id="openModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <button type="button" class="btn-close p-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="description px-5">
+                    <h3 class="title-projet p-3 text-center title_project">Shifumi</h3>
+                    <p class="text text-center">Création d'un jeu "Shifumi" en JavaScript. 
+                        Manipulation du DOM et fonctions.</p>
+                        <p class="text-center languages py-3">HTML - CSS - JavaScript</p>
+                    <form action="https://anachqt.github.io/shifumi/" target="_blank">
+                        <div class="text-center pt-3 pb-5">
+                            <button class="btn" type="submit">Voir le projet</button>                
+                        </div>                          
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Modal Calendar -->
+    <div class="modal fade" id="openModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <button type="button" class="btn-close p-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="description px-5">
+                    <h3 class="title-projet p-3 text-center title_project">Calendrier</h3>
+                    <p class="text text-center">Création d'un calendrier avec PHP.</p>
+                    <p class="text-center languages py-3">HTML - CSS - PHP</p>
+                    <form action="https://github.com/AnaChqt/CalendarPublicVersion" target="_blank">
+                        <div class="text-center pt-3 pb-5">
+                            <button class="btn" type="submit">Voir le projet</button>                
+                        </div>                          
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Modal Form -->
+    <div class="modal fade" id="openModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <button type="button" class="btn-close p-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="description px-5">
+                    <h3 class="title-projet p-3 text-center title_project">Formulaire</h3>
+                    <p class="text text-center">Réalisation d'un formulaire sécurisé en FRONT avec l'utilisation de pattern
+                        et mise en place d'un systeme de nettoyage et de validation en BACK.</p>
+                    <p class="text-center languages py-3">HTML - CSS - PHP</p>
+                    <form action="https://github.com/AnaChqt/FormPublicVersion" target="_blank">
+                        <div class="text-center pt-3 pb-5">
+                            <button class="btn" type="submit">Voir le projet</button>                
+                        </div>                          
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Modal Hospital -->
+    <div class="modal fade" id="openModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <button type="button" class="btn-close p-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="description px-5">
+                    <h3 class="title-projet p-3 text-center title_project">Manu Médic</h3>
+                    <p class="text text-center">Création d'un site permettant la gestion de patients et la prise de rendez-vous.</p>
+                    <p class="text-center languages py-3">HTML - CSS - PHP - SQL</p>
+                    <form action="https://github.com/AnaChqt/HospitalPublicVersion" target="_blank">
+                        <div class="text-center pt-3 pb-5">
+                            <button class="btn" type="submit">Voir le projet</button>                
+                        </div>                          
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p class="text text-center pt-1">Anaïs CHOQUET &#169 | Tous droits réservés</p>
+        <div class="d-flex justify-content-center">
+            <a href="https://www.linkedin.com/in/ana%C3%AFs-choquet-00926a158/" target="_blank"><img src="assets/img/linkedinFooter.png" class="social1" alt="Logo Linkedin"></a>
+            <a href="https://github.com/AnaChqt" target="_blank"><img src="assets/img/githubFooter.png" class="social2" alt="Logo GitHub"></a>
+        </div>
+    </footer>
+
+<!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<!-- Script AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init(); </script>
+<!-- Script Typewriter -->
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+<!-- JS -->
+    <script src="assets/js/cv.js"></script>
+
+</body>
+</html>
